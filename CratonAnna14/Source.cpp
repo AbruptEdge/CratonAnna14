@@ -7,6 +7,7 @@
 #pragma once
 #include <iostream>
 #include "vehical.h"
+#include "car.h"
 
 using namespace std;
 
@@ -14,15 +15,27 @@ int main() {
 
 	int year;
 	string manufactuer;
+	int doors;
 
+	//vehical test
 	cout << "\nVehical: \nEnter a manufactuer: ";
 	cin >> manufactuer;
 	cout << "Enter a year: ";
 	cin >> year;
 
 	vehical vehicalOne(manufactuer, year);
-	cout << "\nVehical Information: ";
 	vehicalOne.displayInfo(vehicalOne);
+
+	//car test
+	cout << "\nCar: \nEnter a manufactuer: ";
+	cin >> manufactuer;
+	cout << "Enter a year: ";
+	cin >> year;
+	cout << "Enter number of doors: ";
+	cin >> doors;
+
+	car carOne(manufactuer,year, doors);
+	carOne.displayInfo(carOne);
 
 	cout << endl;
 	return 0;
