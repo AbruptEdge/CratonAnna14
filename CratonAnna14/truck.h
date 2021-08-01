@@ -15,15 +15,14 @@ class truck : public vehical {
 public:
 
     //functions
-    void displayInfo(truck);
+    void displayTruckInfo(truck);
+    int getTow();
 
     int towingCapacity;
 
     //constructor
-    truck(string truckManufactuer, int year, int tow) {
-        manufactuer = truckManufactuer;
-        yearBuilt = year;
-        towingCapacity = tow;
+    truck() {
+        towingCapacity = getTow();
     }
 
 };

@@ -25,7 +25,6 @@ public:
 
     //constructor
     vehical() {
-     
         manufactuer = getManufactuer();
         yearBuilt = getYear();
     }

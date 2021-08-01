@@ -8,6 +8,7 @@
 #include <iostream>
 #include "vehical.h"
 #include "car.h"
+#include "truck.h"
 
 using namespace std;
 
@@ -18,21 +19,18 @@ int main() {
 	int doors;
 
 	//vehical test
-
 	vehical vehicalOne;
 	cout << "\nVehical Information: ";
 	vehicalOne.displayInfo(vehicalOne);
 
 	//car test
-	cout << "\nCar: \nEnter a manufactuer: ";
-	cin >> manufactuer;
-	cout << "Enter a year: ";
-	cin >> year;
-	cout << "Enter number of doors: ";
-	cin >> doors;
+	car carOne;
+	carOne.displayCarInfo(carOne);
+	cout << endl;
 
-	car carOne(manufactuer,year, doors);
-	carOne.displayInfo(carOne);
+	//truck test
+	truck truckOne;
+	truckOne.displayTruckInfo(truckOne);
 
 	cout << endl;
 	return 0;

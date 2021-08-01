@@ -14,14 +14,14 @@ using namespace std;
 class car : public vehical {
 public:
     //functions
-    void displayInfo(car);
+    void displayCarInfo(car);
+    int getDoors();
 
     int numDoors;
 
     //constructor
-    car(string manufactuer, int year, int doors) {
-       vehical vehicalOne();
-       numDoors = doors;
+    car() {
+       numDoors = getDoors();
     }
 
 };
