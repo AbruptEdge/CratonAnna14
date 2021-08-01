@@ -8,7 +8,20 @@ using namespace std;
 
 void vehical :: displayInfo(vehical car) {
  
-    cout << "\nVehical Information: ";
     cout << "\nManufactuer: " << car.manufactuer << endl;
     cout << "Year Built:  " << car.yearBuilt << endl;
 };
+
+string vehical::getManufactuer() {
+    string manufactuer;
+    cout << "\nVehical: \nEnter a manufactuer: ";
+    cin >> manufactuer;
+    return manufactuer;
+}
+
+int vehical::getYear() {
+    int year;
+    cout << "Enter a year: ";
+    cin >> year;
+    return year;
+}

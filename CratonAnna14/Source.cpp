@@ -18,12 +18,9 @@ int main() {
 	int doors;
 
 	//vehical test
-	cout << "\nVehical: \nEnter a manufactuer: ";
-	cin >> manufactuer;
-	cout << "Enter a year: ";
-	cin >> year;
 
-	vehical vehicalOne(manufactuer, year);
+	vehical vehicalOne;
+	cout << "\nVehical Information: ";
 	vehicalOne.displayInfo(vehicalOne);
 
 	//car test

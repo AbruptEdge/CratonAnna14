@@ -9,6 +9,6 @@ using namespace std;
 void car::displayInfo(car car) {
 
     cout << "\nCar Information: ";
-    cout << "\nManufactuer: " << car.manufactuer << endl;
-    cout << "Year Built:  " << car.yearBuilt << endl;
+    vehical:displayInfo(car);
+    cout << "Doors: " << car.numDoors;
 };

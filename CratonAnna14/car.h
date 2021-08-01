@@ -20,7 +20,8 @@ public:
 
     //constructor
     car(string manufactuer, int year, int doors) {
-       vehical vehicalOne(manufactuer, year);
+       vehical vehicalOne();
+       numDoors = doors;
     }
 
 };

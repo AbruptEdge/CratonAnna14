@@ -15,15 +15,22 @@ class vehical {
 public:
     //functions
     void displayInfo(vehical);
+    
+    //getters?
+    string getManufactuer();
+    int getYear();
 
     string manufactuer;
     int yearBuilt;
 
     //constructor
-    vehical(string a, int b) {
-        manufactuer = a;
-        yearBuilt = b;
+    vehical() {
+     
+        manufactuer = getManufactuer();
+        yearBuilt = getYear();
     }
+
+
 
 };
 
